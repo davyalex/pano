@@ -48,6 +48,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('login') }}">Connexion</a></li>
                         <li><a href="{{ route('register') }}">Creer un compte</a></li>
+                          
                     </ul>
                 </li>
                 @endif
@@ -58,7 +59,11 @@
                         <ul class="dropdown-menu">
                          
                                  <li><a href="{{ route('post.mesposts') }}"><i class="fa fa-list" aria-hidden="true"></i><strong class="text-success"> Mes annonces </strong> <span class="">{{ Auth::user()->posts->count() }}</span></a></li>
-                          
+                                 <li class="divider"></li>
+                                 @if (Auth::user()->role==1)
+                                 <li><a href="{{ route('admin') }}">Dasboard</a></li>
+                                 @endif
+     
                             <li class="divider"></li>
                             <li>
                                 <a class="text-danger" href="{{ route('logout') }}"
