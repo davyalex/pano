@@ -219,7 +219,7 @@ var elem=$('#container ul');
         </div>
        <br>
         <div class="copyrights">
-            <p> © 2021 TrouveMoi. Tous droits reservé </p>
+            <p> © 2021 pano. Tous droits reservé </p>
         </div>
         <div class="clearfix"></div>
     </div>
