@@ -60,7 +60,7 @@
                          
                                  <li><a href="{{ route('post.mesposts') }}"><i class="fa fa-list" aria-hidden="true"></i><strong class="text-success"> Mes annonces </strong> <span class="">{{ Auth::user()->posts->count() }}</span></a></li>
                                  <li class="divider"></li>
-                                 @if (Auth::user()->role==1)
+                                 @if (Auth::user()->role==0)
                                  <li><a href="{{ route('admin') }}">Dasboard</a></li>
                                  @endif
      
