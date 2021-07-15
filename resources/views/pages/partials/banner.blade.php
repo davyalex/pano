@@ -13,7 +13,7 @@
   }
   .custom1 {
     margin-top: 60px;
-    margin-bottom: -20px
+    margin-bottom: -10px
    
     
   }

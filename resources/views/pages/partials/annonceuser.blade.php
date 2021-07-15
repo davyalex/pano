@@ -146,7 +146,7 @@
                             <div class="row">
                                 <span class="req-input" >
                                     
-                                    <select class="form-control"name="category_id" id="">
+                                    <select class="form-control"name="category_id" id="cat">
                                         <option>Select Category</option>
                                         @foreach ($category as $categories)
                                                <option value="{{ $categories->id }}">{{ $categories->libelle }}</option>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="row">
                                 <span class="req-input">
-                                    <select class="form-control"name="ville" id="select">
+                                    <select class="form-control"name="ville" id="ville">
                                         <option value="">Choisir votre commune</option>
                                         <option value="Cocody">Cocody</option>
                                         <option value="Yopougon">Yopougon</option>
@@ -218,6 +218,17 @@
 </div>
 @endforeach
 
+
+<script>
+    $('#cat').selectpicker({
+             liveSearch: true,
+             maxOptions: 1
+           }),
+           $('#ville').selectpicker({
+             liveSearch: true,
+             maxOptions: 1
+           });
+</script>
 
 <style>
 

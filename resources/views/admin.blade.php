@@ -8,7 +8,13 @@
                 <div class="card-header">
                     Dashboard Panel
                 </div>
-                <div class="card-body">
+                <style>
+                    .menu a {
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                    }
+                </style>
+                <div class="card-body menu">
                    <div class="row content-justify">
                     <div class=" col-xs-12 col-md-3">
                         <a href="{{ route('userlist') }}" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-list-alt"></span> <i class="fa fa-user" aria-hidden="true"></i>Utilisateurs</a>

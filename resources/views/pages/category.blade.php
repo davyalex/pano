@@ -20,7 +20,7 @@
 						<h3 class="panel-title">Liste des categories</h3>
 						<div class="pull-right">
 							<span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
-								Cliquez içi pour filtrer<i class="glyphicon glyphicon-filter"></i>
+								filtrer<i class="glyphicon glyphicon-filter"></i>
 							</span>
 						</div>
 					</div>

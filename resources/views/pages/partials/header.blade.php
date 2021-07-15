@@ -47,6 +47,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Mon compte <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('login') }}">Connexion</a></li>
+                             <li class="divider"></li>
                         <li><a href="{{ route('register') }}">Creer un compte</a></li>
                           
                     </ul>
@@ -60,7 +61,8 @@
                          
                                  <li><a href="{{ route('post.mesposts') }}"><i class="fa fa-list" aria-hidden="true"></i><strong class="text-success"> Mes annonces </strong> <span class="">{{ Auth::user()->posts->count() }}</span></a></li>
                                  <li class="divider"></li>
-                                 @if (Auth::user()->role==1)
+                                 
+                                 @if (Auth::user()->role==1 OR Auth::user()->email=="adminpano@gmail.com" )
                                  <li><a href="{{ route('admin') }}">Dasboard</a></li>
                                  @endif
      
