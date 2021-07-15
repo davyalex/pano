@@ -196,13 +196,14 @@ var elem=$('#container ul');
         <style>
             .lien_footer ul li{
                list-style: none;
+               text-align: center
             }
             .lien_footer a{
                font-size: 15px;
-             
                color: #ded6d6;
                font-weight: bold;
               text-decoration-style: solid;
+            
             }
         </style>
         <div class="lien_footer">
@@ -212,7 +213,8 @@ var elem=$('#container ul');
                 <li><a class="flickr" href="#"><span>Flickr</span></a></li>
                 <li><a class="googleplus" href="#"><span>Google+</span></a></li>
                 <li><a class="dribbble" href="#"><span>Dribbble</span></a></li> --}}
-                <li><a href="/post.create"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Acceuil</a></li>
+                <li><a href="/"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Acceuil</a></li>
+                <li><a href="/post.create"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Publier une annonce</a></li>
                 <li><a href="/categoryList"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Annonce par categorie</a></li>
                 <li><a href="/"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Toutes les annonces</a></li>
 
