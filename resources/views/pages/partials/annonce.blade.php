@@ -39,7 +39,7 @@
                     <section class="list-left">
                     <h5 class="title" style="text-transform:capitalize;">{{ $posts->nom }}</h5>
                     <p class="adprice" style="color:#01a185;text-transform:capitalize">{{!empty($posts->categories) ? $posts->categories->libelle:''}}</p><strong><i class="fa fa-home" aria-hidden="true"></i> ({{ $posts->genre }})</strong>
-                    <p style="font-size:20px; color:#f3c500;"> <a href="tel:+"class="btn btn-success"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+"class="btn btn-success"> {{ $posts->contact }}</a></p>
+                    <p style="font-size:20px; color:#f3c500;"> <a href="tel:+"class="btn btn-success"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+{{ $posts->contact }}"class="btn btn-success"> {{ $posts->contact }}</a></p>
                     <p class=""><strong class="btn btn-warning"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></p>
                     </section>
                     {{-- <section class="list-right">
