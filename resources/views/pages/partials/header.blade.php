@@ -39,8 +39,13 @@
 
                     </ul>
                 </li>
-               
-                <li><a href="{{ route('post.create') }}" class="btn btn-warning">Publier</a></li>
+               <style>
+                  .publier {
+                      background-color: #f30;
+                     border-radius: 30px
+                   }
+               </style>
+                <li><a href="{{ route('post.create') }}" class="publier" ><i class="fa fa-plus" aria-hidden="true"></i> Publier</a></li>
                     @guest
                       @if (Route::has('register')&&('login'))
                 <li class="dropdown">
@@ -59,11 +64,11 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> {{ Auth::user()->name }} <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                          
-                                 <li><a href="{{ route('post.mesposts') }}"><i class="fa fa-list" aria-hidden="true"></i><strong class="text-success"> Mes annonces </strong> <span class="">{{ Auth::user()->posts->count() }}</span></a></li>
+                                 <li><a href="{{ route('post.mesposts') }}"><i class="fa fa-list" aria-hidden="true"></i><strong class=""> Mes annonces </strong> <span class="">{{ Auth::user()->posts->count() }}</span></a></li>
                                  <li class="divider"></li>
                                  
-                                 @if (Auth::user()->role==1 OR Auth::user()->email=="adminpano@gmail.com" )
-                                 <li><a href="{{ route('admin') }}">Dasboard</a></li>
+                                 @if (Auth::user()->role==1 OR Auth::user()->email=="alexkouamelan96@gmail.com" )
+                                 <li><a href="{{ route('admin') }}"><i class="fa fa-clipboard" aria-hidden="true"></i> Dasboard</a></li>
                                  @endif
      
                             <li class="divider"></li>
@@ -71,7 +76,7 @@
                                 <a class="text-danger" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                               document.getElementById('logout-form').submit();">
-                                 <i class="fa fa-sign-out"></i> <strong class="text-danger ">{{ __('Deconnexion') }}</strong>
+                                 <i class="fa fa-sign-out"></i> <strong class=" ">{{ __('Deconnexion') }}</strong>
                              </a>
      
                              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -87,8 +92,10 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><strong>Contact: </strong>+225-077-961-3593</a></li>
-                        <li><a href="#"><strong>Mail: </strong>info@pano.com</a></li>
+                        <li><a href="tel:+225"><strong>Contact: </strong>+225-077-961-3593</a></li>
+                       
+                        <li><a href="mailto:info@pano.com"><strong>Mail: </strong>info@pano.com</a></li>
+                      
                         <li class="divider"></li>
                         <li><a href="#"><strong>Address: </strong>
                             <div>

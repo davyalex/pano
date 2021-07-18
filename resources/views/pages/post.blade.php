@@ -113,7 +113,7 @@
 					<span class="req-input" >
 						
 						<select class="form-control"name="category_id" id="cat">
-							<option>Select Category</option>
+							<option>Selectionner une Categorie</option>
 							@foreach ($category as $categories)
 								   <option value="{{ $categories->id }}">{{ $categories->libelle }}</option>
 							@endforeach
@@ -153,7 +153,7 @@
 				<div class="row">
 					<span class="req-input">
 						<span class="input-status" ><i class="fa fa-phone" aria-hidden="true"></i> </span>
-						<input type="text" placeholder="Contact(ex:+225xxxxxxxx)" name="contact">
+						<input type="text" placeholder="Contact(ex:070105XXXXX)" name="contact">
 					</span>
 				</div>
 				<div class="row">
@@ -168,7 +168,7 @@
 				<div class="row">
 					<span class="req-input message-box">
 						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Include a Message."><i class="fa fa-comment" aria-hidden="true"></i> <i>facultatif</i> </span>
-						<textarea type="textarea" data-min-length="10" placeholder="Donnez les détails de votre services" name="description"></textarea>
+						<textarea type="textarea" data-min-length="10" placeholder="Donnez les détails de votre services ----------------(ce champs n'est pas obligatoire )" name="description"></textarea>
 				</div>
 				<div class="row submit-row">
 					<button type="submit" class="btn btn-block submit-form">Valider</button>

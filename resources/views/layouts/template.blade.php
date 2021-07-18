@@ -191,7 +191,6 @@ var elem=$('#container ul');
     <div class="container">
         <div class="footer-logo">
             <img class="img-fluid img-responsive figure-img logo" src="{{ asset('images/pano NSF.png') }}" alt="">
-          
         </div>
         <style>
             .lien_footer ul li{
@@ -206,20 +205,16 @@ var elem=$('#container ul');
             
             }
         </style>
-        <div class="lien_footer">
+        {{-- <div class="lien_footer">
             <ul>
-                {{-- <li><a class="facebook" href="#"><span>Facebook</span>rrr</a></li>
-                <li><a class="twitter" href="#"><span>Twitter</span></a></li>
-                <li><a class="flickr" href="#"><span>Flickr</span></a></li>
-                <li><a class="googleplus" href="#"><span>Google+</span></a></li>
-                <li><a class="dribbble" href="#"><span>Dribbble</span></a></li> --}}
+               
                 <li><a href="/"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Acceuil</a></li>
                 <li><a href="/post.create"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Publier une annonce</a></li>
                 <li><a href="/categoryList"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Annonce par categorie</a></li>
                 <li><a href="/"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Toutes les annonces</a></li>
 
             </ul>
-        </div>
+        </div> --}}
        <br>
         <div class="copyrights">
             <p> © 2021 pano. Tous droits reservé </p>
@@ -239,13 +234,14 @@ var elem=$('#container ul');
   display: none;
   background-color: #33c;
 }
+.fa-angle-double-up{
+    color:#fff;
+}
 	
 </style>
 <a href="">
 	<div id='scroll_to_top' class='text-center opacity'>
         <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-      
-       
     </div>
   
 </a>

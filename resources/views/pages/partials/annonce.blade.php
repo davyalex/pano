@@ -1,4 +1,4 @@
-<div class="ads-display col-md-9">
+<div class="col-md-8">
     <div class="wrapper">					
     <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
       <div id="myTabContent" class="tab-content">
@@ -27,7 +27,16 @@
 <style>
     .list li {
         box-shadow:0 6px 8px 0 #cecece ;
-        background-color: #f3c500
+        background-color:#f3c500;
+    }
+    .contact{
+        background-color: #33c;
+        border-radius: 20px
+    }
+    .ville{
+        background-color: #f30;
+        border-radius: 20px;
+        border-color: #f30
     }
 </style>
 
@@ -38,9 +47,9 @@
                     <img src="{{ asset('images/avatar.jpg') }}" title="" alt="" class="offer offer-success"/>
                     <section class="list-left">
                     <h5 class="title" style="text-transform:capitalize;">{{ $posts->nom }}</h5>
-                    <p class="adprice" style="color:#01a185;text-transform:capitalize">{{!empty($posts->categories) ? $posts->categories->libelle:''}}</p><strong><i class="fa fa-home" aria-hidden="true"></i> ({{ $posts->genre }})</strong>
-                    <p style="font-size:20px; color:#f3c500;"> <a href="tel:+"class="btn btn-success"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+{{ $posts->contact }}"class="btn btn-success"> {{ $posts->contact }}</a></p>
-                    <p class=""><strong class="btn btn-warning"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></p>
+                    <p class="adprice" style="color:#33c;text-transform:capitalize">{{!empty($posts->categories) ? $posts->categories->libelle:''}}</p><strong><i class="fa fa-home" aria-hidden="true"></i> ({{ $posts->genre }})</strong>
+                    <p style="font-size:20px; color:#f3c500;"><a href="tel:+225{{ $posts->contact }}"class="btn btn-info contact">  <i class="fa fa-phone" aria-hidden="true"></i> {{ $posts->contact }}</a></p>
+                    <p class=""><strong class="btn btn-warning ville"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></p>
                     </section>
                     {{-- <section class="list-right">
                     <span class=""><strong class="btn btn-warning"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></span>
@@ -65,9 +74,9 @@
                                             <p>{{ $posts->description }}</p>
                                         </div>
                                         <div class="modal-footer">
-                                           <strong style="margin:4px;"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ $posts->contact }}</strong>
-                                           <strong><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville }}</strong>
-
+                                            <p style="font-size:20px; color:#f3c500;"><a href="tel:+225{{ $posts->contact }}"class="btn btn-info contact">  <i class="fa fa-phone" aria-hidden="true"></i> {{ $posts->contact }}</a></p>
+                                            <p class=""><strong class="btn btn-warning ville"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></p>
+                                           
                                         </div>
                                     </div>
                                 </div>

@@ -1,4 +1,4 @@
-<div class="side-bar col-md-3">
+<div class="side-bar col-md-4">
     {{-- <div class="search-hotel">
     <h3 class="sear-head">Recherche Rapide</h3>
     <form>

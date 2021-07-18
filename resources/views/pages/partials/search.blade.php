@@ -73,7 +73,7 @@
                       <div class="col-md-2">
                         <div class="form-group">
                           <label for="type1" class="control-label"></label>
-                          <button type="submit" class="btn btn-success"><i class="fa fa-search" aria-hidden="true"></i> Rechercher</button>
+                          <button type="submit" class="btn btn-info search"><i class="fa fa-search" aria-hidden="true"></i> Rechercher</button>
                         </div>
                       </div>
                   </div>
@@ -85,6 +85,14 @@
                  
 
             </div>
+
+            <style>
+              .search{
+               background-color: #33c;
+               border-radius: 20px;
+               
+              }
+            </style>
 
         <script>
               $('#type').selectpicker({

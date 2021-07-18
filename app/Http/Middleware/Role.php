@@ -17,7 +17,7 @@ class Role
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user() && Auth::user()->role==1 OR Auth::user()->email=='adminpano@gmail.com') {
+        if (Auth::user() && Auth::user()->role==1 OR Auth::user()->email=='alexkouamelan96@gmail.com') {
             return $next($request);
         }
         return redirect('/')->with('error','Vous notes pas un admin');
