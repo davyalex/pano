@@ -1,4 +1,4 @@
-<div class="ads-display col-md-9">
+<div class="ads-display col-md-8">
     <div class="wrapper">					
     <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
       <div id="myTabContent" class="tab-content">
