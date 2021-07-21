@@ -30,13 +30,13 @@
         background-color:#f3c500;
     }
     .contact{
-        background-color: #33c;
+        background-color: #3498db;
         border-radius: 20px
     }
     .ville{
-        background-color: #f30;
+        background-color: #f39c12;
         border-radius: 20px;
-        border-color: #f30
+        border-color: #f39c12
     }
 </style>
 
@@ -49,7 +49,7 @@
                     <h5 class="title" style="text-transform:capitalize;">{{ $posts->nom }}</h5>
                     <p class="adprice" style="color:#33c;text-transform:capitalize">{{!empty($posts->categories) ? $posts->categories->libelle:''}}</p><strong><i class="fa fa-home" aria-hidden="true"></i> ({{ $posts->genre }})</strong>
                     <p style="font-size:20px; color:#f3c500;"><a href="tel:+225{{ $posts->contact }}"class="btn btn-info contact">  <i class="fa fa-phone" aria-hidden="true"></i> {{ $posts->contact }}</a></p>
-                    <p class=""><strong class="btn btn-warning ville"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></p>
+                    <p class=""><strong class="btn btn-info ville"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></p>
                     </section>
                     {{-- <section class="list-right">
                     <span class=""><strong class="btn btn-warning"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ $posts->ville}}</strong></span>

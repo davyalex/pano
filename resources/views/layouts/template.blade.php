@@ -121,7 +121,7 @@ var elem=$('#container ul');
 </script>
 </head>
 
-<body style="background-color:#ded6d6;">
+<body style="background-color:#ecf0f1;">
     
 
 

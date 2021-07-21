@@ -70,7 +70,7 @@
                         </div>
                       </div>
 
-                      <div class="col-md-2">
+                      <div class="col-md-2 col-sm-12 col-xs-12">
                         <div class="form-group">
                           <label for="type1" class="control-label"></label>
                           <button type="submit" class="btn btn-info search"><i class="fa fa-search" aria-hidden="true"></i> Rechercher</button>
@@ -88,7 +88,8 @@
 
             <style>
               .search{
-               background-color: #33c;
+               background-color: #f39c12;
+               border-color: #f39c12;
                border-radius: 20px;
                
               }

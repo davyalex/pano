@@ -663,7 +663,7 @@ p.creating{
 .sign-up input[type="submit"]{
 	outline: none;
     border: none;
-    background: #01a185;
+    background: #f39c12;
     color: #fff;
     font-size: 1em;
     text-align: center;
@@ -676,7 +676,7 @@ p.creating{
     -ms-transition: .5s all;
 	}
 .sign-up input[type="submit"]:hover{
-	background:#f3c500;
+	background:#3498db;
 	color:#fff;
 	}
 .sub_home {
@@ -2180,7 +2180,7 @@ h3.rate {
 	float:left;
 }
 .select-box {
-    background:rgba(110, 105, 103, 0.459);
+    background:#bdc3c7;
 	padding: 30px 30px;
     margin: 10px 0;
     border-radius: 6px;
@@ -2506,8 +2506,8 @@ h2.sear-head.fer {
 	
 	}
 	.navbar-default {
-	background-color: #33c;
-	border-color: #3f51b5;
+	background-color: #3498db;
+	border-color: #3498db;
 	position: fixed;
 	top: 0;
     width: 100%;
@@ -2535,15 +2535,15 @@ h2.sear-head.fer {
 	}
 	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
 	color: #fff;
-	background-color: #F30;
+	background-color: #f39c12;
 	border-radius: 20px;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 		color:white;
-	background-color: #33c;
+	background-color: #3498db;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-	color: #f30;
+	color: #f39c12;
 	background-color: white;
 
 	}

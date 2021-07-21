@@ -11,6 +11,7 @@
     <div class="graphs">
         <div class="sign-up">
             <h1>Creer Votre compte</h1>
+            <hr>
             <form method="POST" action="{{ route('register') }}">
                 @csrf
             
@@ -64,12 +65,12 @@
                     </div>
                 </div>
             
-                <div class="sub_home_left">
-                    <input type="submit" value="S'enregistrer">
+                <div class="col-md-12  ">
+                    <br><input type="submit" value="Se connecter">
                 </div>
             </form>
-            <div class="sub_home_right">
-                <p> <a href="{{ route('login') }}">Connectez-vous içi <i class="fa fa-user" aria-hidden="true"></i></a></p>
+            <div class="col-md-8 col-md-offset-4">
+                <br><p> <a href="{{ route('login') }}"><b>Connectez-vous içi</b> <i class="fa fa-user" aria-hidden="true"></i></a></p>
             </div>
         </div>
     </div>

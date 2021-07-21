@@ -41,8 +41,8 @@
                 </li>
                <style>
                   .publier {
-                      background-color: #f30;
-                     border-radius: 30px
+                      background-color: #f39c12;
+                     border-radius: 70px
                    }
                </style>
                 <li><a href="{{ route('post.create') }}" class="publier" ><i class="fa fa-plus" aria-hidden="true"></i> Publier</a></li>

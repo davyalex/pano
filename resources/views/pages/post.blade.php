@@ -448,7 +448,7 @@
 	margin:20px;
 	padding:20px;
 	border-radius:0px;
-	background:#B3E5FC;
+	background:#ecf0f1;
 	color:#00838F;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;

@@ -14,6 +14,7 @@
     <div class="graphs">
         <div class="sign-up">
             <h1>Connectez-vous</h1>
+            <hr>
             <style>
                 .form_log strong{
                     color:red;
@@ -48,35 +49,28 @@
                             </span>
                         @enderror
                     </div>
+                    <div class="col-md-12  ">
+                        <br><input type="submit" value="Se connecter">
+                    </div>
                 </div>
             
-                <div class="form-group row">
+                  {{-- <div class="form-group row">
                     <div class="col-md-6 offset-md-4">
                         
-                        {{-- <div class="form-check">
+                      <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
             
                             <label class="form-check-label" for="remember">
                                 {{ __('Remember Me') }}
                             </label>
-                        </div> --}}
+                        </div> 
                     </div>
-                </div>
+                </div>--}}
             
-                <div class="form-group row mb-0">
-                    <div class="col-md-8 offset-md-4">
-                        <input type="submit" value="Se connecter">
-            
-                        {{-- @if (Route::has('password.request'))
-                            <a class="btn btn-link" href="{{ route('password.request') }}">
-                                {{ __('Forgot Your Password?') }}
-                            </a>
-                        @endif --}}
-                    </div>
-                </div>
+               
             </form>
             <div class="sub_home_right">
-                <p> <a href="{{ route('register') }}">Creer votre compte<i class="fa fa-user" aria-hidden="true"></i></a></p>
+                <p> <a href="{{ route('register') }}"><b>Creer votre compte</b><i class="fa fa-user" aria-hidden="true"></i></a></p>
             </div>
         </div>
     </div>
