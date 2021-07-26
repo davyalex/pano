@@ -12,8 +12,9 @@
       height: auto;
   }
   .custom1 {
-    margin-top: 60px;
-    margin-bottom: -10px
+    margin-top: 80px;
+    margin-bottom: -10px;
+   
    
     
   }

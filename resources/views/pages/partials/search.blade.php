@@ -73,7 +73,7 @@
                       <div class="col-md-2 col-sm-12 col-xs-12">
                         <div class="form-group">
                           <label for="type1" class="control-label"></label>
-                          <button type="submit" class="btn btn-info search"><i class="fa fa-search" aria-hidden="true"></i> Rechercher</button>
+                          <button type="submit"  id="btn_search" class="btn btn-info search"><i class="fa fa-search" aria-hidden="true"></i> Rechercher</button>
                         </div>
                       </div>
                   </div>

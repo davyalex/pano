@@ -56,7 +56,7 @@
                     <span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ $posts->created_at->format('d/m/Y')}} <br><i class="fa fa-clock-o" aria-hidden="true"></i> {{ $posts->created_at->format('H:i')}}</span>
                     </section> --}}
                     @if ($posts->description!=null)
-                       <button class=" btn btn-warning" type="button" data-toggle="modal" data-target="#my-modal{{ $posts->id }}">Details de mes services <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                       <button class=" btn btn-warning" id="btn_ds" type="button" data-toggle="modal" data-target="#my-modal{{ $posts->id }}">Details de mes services <i class="fa fa-caret-right" aria-hidden="true"></i></button>
                     @endif
                        <div class="clearfix"></div>
                             @foreach ($post as $posts)

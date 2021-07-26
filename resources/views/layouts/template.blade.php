@@ -193,6 +193,9 @@ var elem=$('#container ul');
             <img class="img-fluid img-responsive figure-img logo" src="{{ asset('images/pano NSF.png') }}" alt="">
         </div>
         <style>
+            .footer-logo img{
+                padding: 5px;
+            }
             .lien_footer ul li{
                list-style: none;
                text-align: center
@@ -232,7 +235,7 @@ var elem=$('#container ul');
   bottom: 50px;
   right: 60px;
   display: none;
-  background-color: #33c;
+  background-color: #3498db;
 }
 .fa-angle-double-up{
     color:#fff;

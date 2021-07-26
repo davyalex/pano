@@ -7,7 +7,6 @@
 @include('pages.partials.header')
 @include('pages.partials.banner')
 @include('pages.partials.bread')
-
   <!-- Submit Ad -->
   {{-- <div class="submit-ad main-grid-border">
       <div class="container">
