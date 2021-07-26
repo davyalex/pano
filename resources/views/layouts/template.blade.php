@@ -242,7 +242,7 @@ var elem=$('#container ul');
 }
 	
 </style>
-<a href="">
+<a href="#">
 	<div id='scroll_to_top' class='text-center opacity'>
         <i class="fa fa-angle-double-up" aria-hidden="true"></i>
     </div>

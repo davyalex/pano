@@ -2510,6 +2510,9 @@ h2.sear-head.fer {
 /**
  * Demo Styles
  */
+ .navbar-toggle{
+	 background-color: #f7eeee;
+ }
  .navbar-brand {
 	/* font-size: 25px;
 	padding: 15px 80px 15px 60px; */

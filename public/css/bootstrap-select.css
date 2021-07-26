@@ -93,6 +93,7 @@
 }
 .bootstrap-select.btn-group.bs-container .dropdown-menu {
   z-index: 1060;
+  bottom: 0px;
 }
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
   display: inline-block;
@@ -115,19 +116,29 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          /* bottom: 0px; */
+          /* top: 0px; */
+          margin-top: 100px;
 }
 .bootstrap-select.btn-group .dropdown-menu.inner {
   position: static;
   float: none;
   border: 0;
-  padding: 0;
+  padding: 50;
+  margin-top: 30px;
   margin: 0;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+          display: block;
+          top: 0px;
+          bottom: 0px;
+    
+   
 }
 .bootstrap-select.btn-group .dropdown-menu li {
   position: relative;
+  
 }
 .bootstrap-select.btn-group .dropdown-menu li.active small {
   color: #fff;
@@ -141,6 +152,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  white-space: normal;
+  top: 0px;
 }
 .bootstrap-select.btn-group .dropdown-menu li a.opt {
   position: relative;

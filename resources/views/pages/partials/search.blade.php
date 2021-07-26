@@ -36,7 +36,7 @@
                       <div class="form-group">
                         <label for="type1" class="control-label"></label>
                         <select class="form-control" name="q" id="type">
-                          <option value="">------------Choisir une categorie------------</option>
+                          <option value="">Choisir une categorie</option>
                           @foreach ($category as $categories)
                           <option value="{{ $categories->libelle }}">{{ $categories->libelle }}</option>
                           @endforeach
@@ -48,7 +48,7 @@
                         <div class="form-group">
                           <label for="location1" class="control-label"></label>
                           <select class="form-control" name="search" id="ville">
-                            <option value="">------------Choisir votre commune------------</option>
+                            <option value="">Choisir votre commune</option>
                             <option value="Cocody">Cocody</option>
                             <option value="Yopougon">Yopougon</option>
                             <option value="Riviera">Riviera</option>
@@ -97,6 +97,7 @@
 
         <script>
               $('#type').selectpicker({
+    
               liveSearch: true,
               maxOptions: 1
             }),
