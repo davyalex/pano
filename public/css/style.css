@@ -3572,6 +3572,8 @@ label {
 		right: 6px;
 	}
 }
+
+@media screen and  (max-width)
 @media (max-width: 991px){
 	.main-banner {
 		min-height: 260px;
@@ -4647,6 +4649,7 @@ label {
 	.sitemap-region ul {
 		margin-left: 0;
 	}
+	
 }
 @media (max-width: 320px){
 	.main-banner, .banner {
